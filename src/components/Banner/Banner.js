@@ -10,9 +10,9 @@ export function Banner() {
     <div className="Banner" id="home">
       <div className="Banner__div">
         <h1>
-          Juan Felipe
+          Xiomara
           <br />
-          Velasquez Escobar
+          Franco
         </h1>
         <p>Web Developer</p>
       </div>
