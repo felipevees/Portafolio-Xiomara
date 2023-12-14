@@ -55,7 +55,7 @@
     width: 230px;
 
     &__content{
-      background-color: $clay-color;
+      background-color: #322214;
       align-items: center;
       border-radius: 12px;
       display: flex;
@@ -288,7 +288,7 @@
     justify-self: start;
   
     &__content {
-      background-color: $green-color;
+      background-color: #322214;
       background-image: url(../../assets/img/background.png);
       opacity: 1;
       transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);

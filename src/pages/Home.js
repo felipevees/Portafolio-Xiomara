@@ -7,7 +7,6 @@ export function Home() {
       <Banner />
       <About />
       <Skills />
-      <Portfolio />
       <Contact />
     </div>
   );

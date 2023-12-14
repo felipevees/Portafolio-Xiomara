@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.scss";
-import github from "../../assets/icons/github.png";
-import linkedin from "../../assets/icons/linkedin.png";
 import CV from "../../assets/files/CV.pdf";
 
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
@@ -38,12 +36,14 @@ export function Navbar() {
       className={`Navbar navbar navbar-expand-lg ${scrolled ? "scrolled" : ""}`}
     >
       <div className="Navbar-apps ">
-        <a href="https://github.com/felipevees">
-          <img src={github} alt="github" />
+        <a
+          className="wix"
+          href="https://francoyeidy1614.wixsite.com/misitio"
+          target="_blank"
+        >
+          <h1 style={{ margin: "0", padding: "0" }}>WIX</h1>
         </a>
-        <a href="https://www.linkedin.com/in/juan-velasquez-escobar-a9a74123b/">
-          <img src={linkedin} alt="linkedin" />
-        </a>
+
         <a href={CV} download>
           <h1 style={{ margin: "0", padding: "0" }}>CV</h1>
         </a>
@@ -73,13 +73,13 @@ export function Navbar() {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link active" href="/#about">
+            <a className="nav-link active sobre-mi" href="/#about">
               About
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link active" href="/#skills">
-              Skills
+            <a className="nav-link active" href="/#servicios">
+              Servicios
             </a>
           </li>
           <li className="nav-item">

@@ -1,19 +1,19 @@
 $background-color: #fef9f1;
-$blue-color:#3d405b;
-$clay-color:#e07a5f;
+$blue-color:#d59500;
+$clay-color:#a7973d;
 $black-color:#231f20;
-$yellow-color:#f3d3a0;
-$green-color:#81b29a;
+$yellow-color:#a94808;
+$green-color:#2d554c;
 $rose-color:#e3d4d0;
 $grey-color:#f7f1e7;
 $grey2-color:#f3ece6;
 
-$title-font:"Francois One", sans-serif;
-$text-font:"Montserrat";
+$title-font:"DM Serif Display", sans-serif; //Francois One
+$text-font:"Quattrocento", sans-serif; //Montserrat
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0 ;
+    padding: 0 ;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
   }
@@ -23,6 +23,8 @@ $text-font:"Montserrat";
     background-image: url('./assets/img/background.png'); 
     background-repeat: repeat; 
     background-size: auto; 
+    margin: 0 ;
+    padding: 0 ;
   }
   h1{
     font-family: $title-font;
@@ -73,3 +75,5 @@ $text-font:"Montserrat";
     }
   }
   }
+
+  

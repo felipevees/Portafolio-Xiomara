@@ -1,27 +1,32 @@
 @import "../../App.scss";
 
 .Contact{
+    position:absolute;
+    width: 100vw;
+    background: #322214;
+    background-image: url(../../assets/img/background.png);
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 70px;
+  flex-direction: column;
+  align-items: center;
+  min-height: 300px;
 
     &__container{
-    background: $black-color;
-    background-image: url(../../assets/img/background.png);
-    border-radius: 12px;
     height: 100%;
     width: 100%;
-    height: fit-content;
 
     h1{
         color: $background-color;
-        font-size: 40px;
+        font-size: 35px;
     }
 
     @media(max-width:440px){
         h1{
             font-size: 27px;
+        }
+    }
+    @media(max-width:768px){
+        h1{
+            font-size: 30px;
         }
     }
     }
@@ -31,8 +36,12 @@
 
 .icon{
     transition: transform 0.2s ease !important;
+    height: 70px;
     @media(max-width:576px){
         height:50px;
+    }
+    @media(max-width:768px){
+        height:70px;
     }
 }
 .icon:hover {
@@ -49,4 +58,5 @@
     width: 50% !important;
     max-width: 100%;
     }
+    
 }

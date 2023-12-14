@@ -14,7 +14,7 @@ export function Contact() {
           <h1>Contactar</h1>
         </div>
         <div className="Contact__container__links row mb-5">
-          <div className="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-6 mb-4">
+          <div className="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-6 mb-4">
             <figure>
               <a
                 href="https://wa.me/573172821594"
@@ -26,7 +26,7 @@ export function Contact() {
               </a>
             </figure>
           </div>
-          <div className="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-6 mb-4">
+          <div className="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-6 mb-4">
             <figure>
               <a href="mailto:juanfelipevelasquezescobar82@gmail.com">
                 <img className="icon" src={gmail} alt="gmail" />
@@ -34,7 +34,7 @@ export function Contact() {
               </a>
             </figure>
           </div>
-          <div className="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-6 mb-4">
+          <div className="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-6 mb-4">
             <figure>
               <a
                 href="https://github.com/felipevees"
@@ -46,7 +46,7 @@ export function Contact() {
               </a>
             </figure>
           </div>
-          <div className="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-6 mb-4">
+          <div className="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-6 mb-4">
             <figure>
               <a
                 href="https://www.linkedin.com/in/juan-velasquez-escobar-a9a74123b/"

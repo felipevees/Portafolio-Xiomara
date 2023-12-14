@@ -1,83 +1,118 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Skills.scss";
-import { Circular } from "./Percentages";
-import html from "../../assets/icons/html-vanilla.png";
-import react from "../../assets/icons/react-vanilla.png";
-import django from "../../assets/icons/django.png";
-import sql from "../../assets/icons/sql.png";
-import git from "../../assets/icons/git.png";
-import javascript from "../../assets/icons/javascript.png";
+import { ModalComponent } from "./modal";
+
+import contadora from "../../assets/icons/xiomara/contador.png";
+import costos from "../../assets/icons/xiomara/presupuesto.png";
+import presupuestos from "../../assets/icons/xiomara/contabilidad.png";
+import computador from "../../assets/icons/xiomara/computer.png";
+import documento from "../../assets/icons/xiomara/documento.png";
 
 export function Skills() {
+  const [open, setOpen] = useState(false);
+  const [content, setContent] = useState("");
+  const handleOpen = (event) => {
+    setOpen(true);
+    const clickedElement = event.currentTarget.id;
+    if (clickedElement == "gestionFinanciera") {
+      setContent("gestionFinanciera");
+    } else if (clickedElement == "presupuestos") {
+      setContent("presupuestos");
+    } else if (clickedElement == "asesorias") {
+      setContent("asesorias");
+    } else if (clickedElement == "administracion") {
+      setContent("administracion");
+    } else if (clickedElement == "digitacion") {
+      setContent("digitacion");
+    }
+    console.log(content);
+  };
+  const handleClose = () => setOpen(false);
   return (
-    <div className="Skills" id="skills">
-      <div className="Skills__container">
-        <div className="Skills__content">
-          <div>
-            <h1 style={{ fontSize: "45px", marginBottom: "20px" }}>Skills</h1>
-          </div>
-          <div className="Skills__skills">
-            <div className="Skills__card">
-              <div className="Skills__card__image">
-                <img className="django" src={django} alt="django" />
-              </div>
-              <div className="Skills__card__skill">
-                <h1>Django</h1>
-                <Circular percentage="django" />
-              </div>
+    <>
+      {" "}
+      <ModalComponent open={open} handleClose={handleClose} content={content} />
+      <div className="Skills" id="servicios">
+        <div className="Skills__container">
+          <div className="Skills__content">
+            <div className="Skills__content__header">
+              <h1 style={{ fontSize: "45px", marginBottom: "20px" }}>
+                Servicios
+              </h1>
+              <p>
+                Como contadora profesional con amplia experiencia en el campo
+                financiero, ofrezco una gama integral de servicios para
+                satisfacer las necesidades contables de mi distinguida
+                clientela. Con habilidades especializadas y un profundo
+                conocimiento en la gestión financiera, tengo la capacidad de
+                brindar servicios tales como:
+              </p>
             </div>
-            <div className="Skills__card">
-              <div className="Skills__card__image">
-                <img src={react} alt="react" />
+            <div className="Skills__skills">
+              <div
+                id="gestionFinanciera"
+                onClick={handleOpen}
+                className="Skills__card"
+              >
+                <div className="Skills__card__image">
+                  <img className="django" src={costos} alt="costos" />
+                </div>
+                <div className="Skills__card__skill">
+                  <h1>Gestion financiera y tributaria</h1>
+                </div>
               </div>
-              <div className="Skills__card__skill">
-                <h1>React</h1>
-                <Circular percentage="react" />
+              <div
+                id="presupuestos"
+                onClick={handleOpen}
+                className="Skills__card"
+              >
+                <div className="Skills__card__image">
+                  <img src={presupuestos} alt="presupuestos" />
+                </div>
+                <div className="Skills__card__skill">
+                  <h1>Presupuestos</h1>
+                </div>
               </div>
-            </div>
-            <div className="Skills__card">
-              <div className="Skills__card__image">
-                <img
-                  style={{ borderRadius: "12px" }}
-                  src={javascript}
-                  alt="javascript"
-                />
+              <div id="asesorias" onClick={handleOpen} className="Skills__card">
+                <div className="Skills__card__image">
+                  <img
+                    style={{ borderRadius: "12px" }}
+                    src={contadora}
+                    alt="contadora"
+                  />
+                </div>
+                <div className="Skills__card__skill">
+                  <h1>Asesorias financieras</h1>
+                </div>
               </div>
-              <div className="Skills__card__skill">
-                <h1>Javascript</h1>
-                <Circular percentage="javascript" />
+              <div
+                id="administracion"
+                onClick={handleOpen}
+                className="Skills__card"
+              >
+                <div className="Skills__card__image">
+                  <img src={computador} alt="computador" />
+                </div>
+                <div className="Skills__card__skill">
+                  <h1>Administracion de documentos</h1>
+                </div>
               </div>
-            </div>
-            <div className="Skills__card">
-              <div className="Skills__card__image">
-                <img src={html} alt="html" />
-              </div>
-              <div className="Skills__card__skill">
-                <h1>HTML y CSS</h1>
-                <Circular percentage="htmlcss" />
-              </div>
-            </div>
-            <div className="Skills__card">
-              <div className="Skills__card__image">
-                <img src={sql} alt="sql" />
-              </div>
-              <div className="Skills__card__skill">
-                <h1>SQL</h1>
-                <Circular percentage="sql" />
-              </div>
-            </div>
-            <div className="Skills__card">
-              <div className="Skills__card__image">
-                <img src={git} alt="git" />
-              </div>
-              <div className="Skills__card__skill">
-                <h1>Git y GitHub</h1>
-                <Circular percentage="git" />
+              <div
+                id="digitacion"
+                onClick={handleOpen}
+                className="Skills__card"
+              >
+                <div className="Skills__card__image">
+                  <img src={documento} alt="documento" />
+                </div>
+                <div className="Skills__card__skill">
+                  <h1>Digitacion de documentos de contabilidad</h1>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
