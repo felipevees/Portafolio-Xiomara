@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.scss";
 import person from "../../assets/icons/xiomara/xiomara foto.webp";
-import wave2 from "../../assets/img/waveyellow.png";
+import wave2 from "../../assets/img/waveNew3.png";
 
 export function About() {
   return (

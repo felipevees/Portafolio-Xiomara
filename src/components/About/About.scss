@@ -57,7 +57,7 @@
       padding: 30px 20px;
       padding-bottom: 40px;
       align-items: center;
-      background:$blue-color;
+      background:#303401;
       background-image: url(../../assets/img/background.png);
       display: flex;
       height: 100%;
@@ -65,7 +65,14 @@
       width: 100%;
       opacity: 1;
 
-      
+       div{
+            h1{
+                color: rgb(184, 139, 99);
+                
+            }
+            p{
+                color: rgb(184, 139, 99);
+            }}
       @media(max-width:768px) {
         display: flex;
         flex-direction: column;
