@@ -13,7 +13,7 @@ export function About() {
         <div className="About__content">
           <div className="About__div1">
             <h1>Sobre mi</h1>
-            <p>
+            <h5>
               Responsable, con alto sentido de pertenencia, ordenada, amable y
               con capacidad para resolver problemas. Actualizo constantemente
               mis conocimientos en las áreas contable y de seguridad social.
@@ -24,7 +24,7 @@ export function About() {
               Con gusto me reuniré con usted para responder cualquier pregunta
               que pueda tener .
               <span style={{ fontWeight: "bold" }}> ¡Contácteme!</span>
-            </p>
+            </h5>
           </div>
           <div className="About__separator"></div>
           <div className="About__div2">

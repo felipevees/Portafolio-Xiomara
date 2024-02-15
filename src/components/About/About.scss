@@ -67,11 +67,11 @@
 
        div{
             h1{
-                color: rgb(184, 139, 99);
+                color: black;
                 
             }
-            p{
-                color: rgb(184, 139, 99);
+            h5{
+                color: black;
             }}
       @media(max-width:768px) {
         display: flex;
@@ -87,7 +87,7 @@
                 font-size: 57px;
                 
             }
-            p{
+            h5{
                 font-size: 20px;
             }
         }
@@ -103,7 +103,7 @@
         background-size: 332px auto;
         h1{
             font-size: 50px;        }
-        p{
+            h5{
             margin-top: 10px;
             font-size: 20px ;
         }
