@@ -14,16 +14,15 @@ export function About() {
           <div className="About__div1">
             <h1>Sobre mi</h1>
             <p>
-              Líder del grupo ALCÓN COLOMBIA SAS. Contadora Pública, e Ingeniera
-              Financiera, especialista en Normas Internacionales de Información
-              Financiera, Costos y Presupuestos, Revisoría Fiscal y Auditoría.
-              Con amplia experiencia en los sectores financiero y tributario.
-              Identifico las necesidades específicas de cada cliente utilizando
-              procedimientos metódicos de investigación de mercado y tendencias
-              económicas. Me desempeño con un alto nivel de profesionalismo,
-              confidencialidad, ética, lealtad y los mayores estándares de
-              calidad. Con gusto me reuniré con usted para responder cualquier
-              pregunta que pueda tener sobre su situación financiera.
+              Responsable, con alto sentido de pertenencia, ordenada, amable y
+              con capacidad para resolver problemas. Actualizo constantemente
+              mis conocimientos en las áreas contable y de seguridad social.
+              Cuento con conocimientos en costos, manejo de presupuestos,
+              inventarios, ejecución del ciclo contable, procesos de nómina,
+              facturación, cartera, tesorería y documentos electrónicos; además
+              de habilidades básicas en parametrización de software contable.
+              Con gusto me reuniré con usted para responder cualquier pregunta
+              que pueda tener .
               <span style={{ fontWeight: "bold" }}> ¡Contácteme!</span>
             </p>
           </div>

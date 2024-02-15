@@ -3,8 +3,6 @@ import "./Skills.scss";
 import { ModalComponent } from "./modal";
 
 import contadora from "../../assets/icons/xiomara/contador.png";
-import costos from "../../assets/icons/xiomara/presupuesto.png";
-import presupuestos from "../../assets/icons/xiomara/contabilidad.png";
 import computador from "../../assets/icons/xiomara/computer.png";
 import documento from "../../assets/icons/xiomara/documento.png";
 
@@ -14,16 +12,12 @@ export function Skills() {
   const handleOpen = (event) => {
     setOpen(true);
     const clickedElement = event.currentTarget.id;
-    if (clickedElement == "gestionFinanciera") {
-      setContent("gestionFinanciera");
-    } else if (clickedElement == "presupuestos") {
-      setContent("presupuestos");
-    } else if (clickedElement == "asesorias") {
+    if (clickedElement === "asesorias") {
       setContent("asesorias");
-    } else if (clickedElement == "administracion") {
-      setContent("administracion");
-    } else if (clickedElement == "digitacion") {
-      setContent("digitacion");
+    } else if (clickedElement === "nomina") {
+      setContent("nomina");
+    } else if (clickedElement === "gestion") {
+      setContent("gestion");
     }
     console.log(content);
   };
@@ -49,30 +43,6 @@ export function Skills() {
               </p>
             </div>
             <div className="Skills__skills">
-              <div
-                id="gestionFinanciera"
-                onClick={handleOpen}
-                className="Skills__card"
-              >
-                <div className="Skills__card__image">
-                  <img className="django" src={costos} alt="costos" />
-                </div>
-                <div className="Skills__card__skill">
-                  <h1>Gestion financiera y tributaria</h1>
-                </div>
-              </div>
-              <div
-                id="presupuestos"
-                onClick={handleOpen}
-                className="Skills__card"
-              >
-                <div className="Skills__card__image">
-                  <img src={presupuestos} alt="presupuestos" />
-                </div>
-                <div className="Skills__card__skill">
-                  <h1>Presupuestos</h1>
-                </div>
-              </div>
               <div id="asesorias" onClick={handleOpen} className="Skills__card">
                 <div className="Skills__card__image">
                   <img
@@ -82,31 +52,23 @@ export function Skills() {
                   />
                 </div>
                 <div className="Skills__card__skill">
-                  <h1>Asesorias financieras</h1>
+                  <h1>Asesoria financiera y declaraciones de renta</h1>
                 </div>
               </div>
-              <div
-                id="administracion"
-                onClick={handleOpen}
-                className="Skills__card"
-              >
+              <div id="nomina" onClick={handleOpen} className="Skills__card">
                 <div className="Skills__card__image">
                   <img src={computador} alt="computador" />
                 </div>
                 <div className="Skills__card__skill">
-                  <h1>Administracion de documentos</h1>
+                  <h1>Nómina y contabilidad</h1>
                 </div>
               </div>
-              <div
-                id="digitacion"
-                onClick={handleOpen}
-                className="Skills__card"
-              >
+              <div id="gestion" onClick={handleOpen} className="Skills__card">
                 <div className="Skills__card__image">
                   <img src={documento} alt="documento" />
                 </div>
                 <div className="Skills__card__skill">
-                  <h1>Digitacion de documentos de contabilidad</h1>
+                  <h1>Gestión administrativa</h1>
                 </div>
               </div>
             </div>

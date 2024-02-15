@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.scss";
-import CV from "../../assets/files/CV.pdf";
+import CV from "../../assets/files/HojaDeVidaXiomaraFranco.pdf";
 
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
@@ -40,11 +40,12 @@ export function Navbar() {
           className="wix"
           href="https://francoyeidy1614.wixsite.com/misitio"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <h1 style={{ margin: "0", padding: "0" }}>WIX</h1>
         </a>
 
-        <a href={CV} download>
+        <a href={CV} target="_blank" rel="noopener noreferrer">
           <h1 style={{ margin: "0", padding: "0" }}>CV</h1>
         </a>
         {isButtonVisible && (
@@ -80,11 +81,6 @@ export function Navbar() {
           <li className="nav-item">
             <a className="nav-link active" href="/#servicios">
               Servicios
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link active" href="/#portfolio">
-              Portafolio
             </a>
           </li>
           <li className="nav-item">

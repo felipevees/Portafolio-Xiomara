@@ -14,10 +14,11 @@
     transform: translate(-50%, -50%);
     max-width: 700px;
     background-image: url(../../../assets/img/background.png);
-    background-color: $yellow-color;
+    background-color: #8a5209;
     border-radius: 18px;
     box-shadow: 50;
     padding: 100px;
+    width:400px;
 
     @media(max-width:12850px){
       padding: 50px;
@@ -38,12 +39,12 @@ font-size: 1.1em;
   }
   a{
     font-family: $title-font;
-    color: black;
+    color: #ecb876 !important;
   }
   button{
     margin-top: 15px;
     font-size: 22px;
-    background: $blue-color;
+    background: #322214;
     background-image: url(../../../assets/img/background.png);
     padding:15px 20px;
     border: none;
