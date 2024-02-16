@@ -14,9 +14,7 @@ export function Banner() {
           <br />
           Franco
         </h1>
-        <p>
-          Contadora <br /> Especialista financiera
-        </p>
+        <p>Asesorias</p>
       </div>
       <div>
         <div className="container">

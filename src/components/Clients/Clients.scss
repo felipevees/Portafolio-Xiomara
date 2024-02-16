@@ -1,0 +1,43 @@
+@import "../../App.scss";
+
+.Clients-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+    padding: 50px 20px;
+
+    &__title{
+        margin-bottom: 30px;
+    }
+    &__content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        div{
+            flex-basis: calc(50% - 10px); 
+            display: flex;
+            justify-content: center;
+        }
+        img{
+            max-width: 300px;
+            border-radius: 15px;
+            margin: 10px;
+        }
+        @media screen and (min-width: 1200px) {
+             div {
+                flex-basis: calc(25% - 10px);
+            }
+        }
+        @media(max-width: 768px){
+        
+                font-display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            
+        }
+    }
+}

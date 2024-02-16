@@ -24,6 +24,8 @@ export function ModalComponent({ open, handleClose, content }) {
               ? nominaYContabilidad.titulo
               : content === "gestion"
               ? gestionAdministrativa.titulo
+              : content === "declaraciones"
+              ? declaracionesDeRenta.titulo
               : "Sin titulo"}
           </Typography>
           <Typography id="keep-mounted-modal-description" sx={{ mt: 2 }}>
@@ -33,6 +35,8 @@ export function ModalComponent({ open, handleClose, content }) {
               ? nominaYContabilidad.contenido
               : content === "gestion"
               ? gestionAdministrativa.contenido
+              : content === "declaraciones"
+              ? declaracionesDeRenta.contenido
               : "Sin Contenido"}
           </Typography>
 
@@ -61,4 +65,9 @@ const nominaYContabilidad = {
   titulo: "Nómina y contabilidad",
   contenido:
     "Apoyo al personal de la empresa para fortalecer los procesos contables y de nómina de la compañía, garantizando que la información financiera, contable y de nómina sea confiable y oportuna o si su empresa no cuenta con el personal ídoneo podremos desarrollar un convenio para tercerizar el proceso.",
+};
+const declaracionesDeRenta = {
+  titulo: "Declaraciones de renta",
+  contenido:
+    "Declare correctamente y evite pagar multas, pagar de más o si la declaración de renta sugerida por la DIAN no corresponde con su realidad económica, cuente conmigo para asesorarlo.",
 };

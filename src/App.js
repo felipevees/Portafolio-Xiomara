@@ -1,7 +1,7 @@
 import "./App.scss";
 import { Routes, Route } from "react-router-dom";
-import { MainLayout, WebPageLayout } from "./Layouts";
-import { Home, WebPage, Error404 } from "./pages";
+import { MainLayout } from "./Layouts";
+import { Home, Error404 } from "./pages";
 
 function App() {
   return (
@@ -15,30 +15,7 @@ function App() {
             </MainLayout>
           }
         />
-        <Route
-          path="/tecnocredito"
-          element={
-            <WebPageLayout>
-              <WebPage />
-            </WebPageLayout>
-          }
-        />
-        <Route
-          path="/icard"
-          element={
-            <WebPageLayout>
-              <WebPage />
-            </WebPageLayout>
-          }
-        />
-        <Route
-          path="/recipeapp"
-          element={
-            <WebPageLayout>
-              <WebPage />
-            </WebPageLayout>
-          }
-        />
+
         <Route
           path="*"
           element={
