@@ -48,7 +48,7 @@
             font-size: 45px;
         }
         p{
-            font-size: 18px !important;
+            font-size: 15px !important;
         }
     }
     }
@@ -105,7 +105,7 @@
             font-size: 50px;        }
             p{
             margin-top: 10px;
-            font-size: 20px ;
+            font-size: 18px ;
         }
 
         @media(max-width:768px){
@@ -119,35 +119,7 @@
         
     }
 
-    &__separator{
-    position:relative;
-    margin:0 45px;
-    border-radius:10px;
-    width:5px;
-    height:160px;
-    background-color: $black-color;
-    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
-    transform: scaleY(0);
-    transform-origin:top;
-
-    @media(max-width:768px){
-    margin:45px 0;
-    width:400px;
-    height:5px;
-    transform: scaleX(0);
-    transform-origin:left;
-
-    }
-    @media(max-width:590px){
-        margin:45px 0;
-        width:250px;
-        height:5px;
-        transform: scaleX(0);
-        transform-origin:left;
-    
-        }
-    }
-
+   
     &__div2{
         width:300px;
         display: flex;

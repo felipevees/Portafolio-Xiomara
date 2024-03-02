@@ -74,7 +74,7 @@ export function Navbar() {
             </a>
           </li>
           <li className="nav-item">
-            <a  className="nav-link active sobre-mi" href="/#about">
+            <a style={{whiteSpace:"nowrap"}} className="nav-link active sobre-mi" href="/#about">
               Acerca de
             </a>
           </li>

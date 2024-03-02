@@ -54,7 +54,7 @@ export function ModalComponent({ open, handleClose, content }) {
 const asesorias = {
   titulo: "Asesoría financiera y declaraciones de renta",
   contenido:
-    "Para personas naturales que están en constante búsqueda de mejorar su situación financiera o deseen empreder un proyecto para el cual requieran proyectar costos.",
+    "Para personas naturales que están en constante búsqueda de mejorar su situación financiera o deseen emprender un proyecto para el cual requieran proyectar costos.",
 };
 const gestionAdministrativa = {
   titulo: "Gestión Administrativa",
@@ -69,5 +69,5 @@ const nominaYContabilidad = {
 const declaracionesDeRenta = {
   titulo: "Declaraciones de renta",
   contenido:
-    "Declare correctamente y evite pagar multas, pagar de más o si la declaración de renta sugerida por la DIAN no corresponde con su realidad económica, cuente conmigo para asesorarlo.",
+    "Declare correctamente y evite pagar multas, pagar de más o si la declaración de renta sugerida por la DIAN no corresponde con su realidad económica, cuente conmigo para asesorarlo.",
 };

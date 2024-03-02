@@ -55,7 +55,7 @@ export function Skills() {
                   />
                 </div>
                 <div className="Skills__card__skill">
-                  <h1>Asesoria financiera </h1>
+                  <h1>Asesoría financiera </h1>
                 </div>
               </div>
               <div

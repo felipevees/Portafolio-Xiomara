@@ -14,7 +14,7 @@ export function Banner() {
           <br />
           Franco
         </h1>
-        <p>Asesorias</p>
+        <p>Asesorías</p>
       </div>
       <div>
         <div className="container">
