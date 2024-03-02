@@ -10,7 +10,7 @@ export function Clients() {
   return (
     <div className="Clients-container">
       <div className="Clients-container__title">
-        <h1>Clientes Actuales</h1>
+        <h1>Clientes</h1>
       </div>
       <div className="Clients-container__content">
         <div>
